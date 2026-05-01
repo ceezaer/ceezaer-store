@@ -1245,6 +1245,7 @@ ul, ol {
     --spacing-2xl: 7rem;
   }
 
+  /* Mobile slide-over: full-width panel with centered links */
   .main-nav {
     width: 100%;
     max-width: 100%;
@@ -1253,15 +1254,23 @@ ul, ol {
     justify-content: center;
   }
 
-  .nav-link {
-    font-size: 1.2rem;
-    padding: 1rem 0;
+  .main-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.9rem 0;
     text-align: center;
+    width: 100%;
   }
 
-  .nav-link::after {
+  .main-nav .nav-link::after {
     left: 50%;
-    transform: translateX(-50%);
+    right: auto;
+    transform: translateX(-50%) scaleX(0);
+    width: 36px;
+  }
+
+  .main-nav .nav-link:hover::after,
+  .main-nav .nav-link.active::after {
+    transform: translateX(-50%) scaleX(1);
   }
 
   .portfolio-grid {
@@ -2382,3 +2391,91 @@ a.service-card:hover .btn {
 .breadcrumb a { color: var(--color-text-subtle); text-decoration: none; }
 .breadcrumb a:hover { color: var(--color-text-muted); }
 .breadcrumb span { opacity: 0.4; }
+
+/* ==========================================================================
+   Mobile Polish — targeted fixes for small screens
+   ========================================================================== */
+
+/* Tighten container padding on phones */
+@media (max-width: 600px) {
+  .container,
+  .container-narrow {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Logo: slightly smaller on phones */
+  .logo {
+    font-size: 1.15rem;
+    letter-spacing: 0.15em;
+  }
+
+  /* Header: ensure it never overflows on small phones */
+  .header-inner {
+    gap: 0.5rem;
+  }
+
+  .header-cta {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* Page headers: tighten top padding */
+  .page-header {
+    padding-top: calc(80px + 2rem);
+    padding-bottom: 2rem;
+  }
+
+  /* Section headers: reduce margin */
+  .section-header {
+    margin-bottom: var(--spacing-md);
+  }
+
+  /* Service showcase: ensure text is legible */
+  .service-showcase-title {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+  }
+
+  .service-showcase-label {
+    font-size: 0.65rem;
+  }
+
+  /* About stats: tighter on phones */
+  .about-stats {
+    gap: var(--spacing-sm);
+  }
+
+  .stat-number {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  /* Section title sizing */
+  .section-title {
+    font-size: clamp(1.6rem, 7vw, 2.5rem);
+  }
+
+  /* Footer nav: smaller gap and font */
+  .footer-nav {
+    gap: 0.5rem 1rem;
+    justify-content: center;
+  }
+
+  .footer-link {
+    font-size: 0.72rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.72rem;
+  }
+
+  /* Prevent horizontal scroll from any oversized elements */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Blog cards grid: remove horizontal overflow */
+  .blog-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
