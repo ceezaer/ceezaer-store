@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Successful — Ceezaer</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .success-page { display:flex; align-items:center; justify-content:center; min-height:80vh; text-align:center; padding:2rem; }
+    .success-box { max-width:560px; }
+    .success-icon { font-size:4rem; margin-bottom:1.5rem; }
+    .success-box h1 { margin-bottom:1rem; }
+    .success-box p { font-size:1.05rem; margin-bottom:0.75rem; }
+    .steps { display:grid; gap:1rem; margin:2.5rem 0; text-align:left; }
+    .step-item { background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:1.25rem 1.5rem; display:flex; gap:1rem; align-items:flex-start; }
+    .step-num { background:linear-gradient(135deg,var(--brand),var(--brand2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-size:1.5rem; font-weight:900; flex-shrink:0; }
+    .step-item h4 { font-size:0.95rem; margin-bottom:0.25rem; }
+    .step-item p { font-size:0.875rem; margin:0; }
+  </style>
+</head>
+<body>
+<header><nav class="site-nav">
+  <a href="/" class="nav-logo">CEEZAER ✦</a>
+  <div class="nav-links">
+    <a href="/platform">Platform</a>
+    <a href="/products">Digital Products</a>
+    <a href="/blog">Blog</a>
+    <a href="https://ceezaer.com/contact" class="nav-cta">Contact</a>
+  </div>
+</nav></header>
+
+<div class="success-page">
+  <div class="success-box">
+    <div class="success-icon">🎉</div>
+    <h1>Payment Confirmed!</h1>
+    <p>Thank you — your order has been received and is being processed.</p>
+    <p id="order-detail" style="color:var(--brand);font-weight:600;"></p>
+
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <div>
+          <h4>Check Your Email</h4>
+          <p>Your receipt and download link (for digital products) or booking confirmation will arrive within 5 minutes. Check spam if you don't see it.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <div>
+          <h4>For Services — We'll Reach Out</h4>
+          <p>If you booked a drone service, our team will contact you within 24 hours to confirm your date and details.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <div>
+          <h4>Platform Access</h4>
+          <p>If you subscribed to the platform, your access credentials will be in your welcome email.</p>
+        </div>
+      </div>
+    </div>
+
+    <p style="color:var(--muted);font-size:0.9rem;">Questions? Email <a href="mailto:info@ceezaer.com">info@ceezaer.com</a></p>
+
+    <div class="btn-group" style="margin-top:2rem;">
+      <a href="/" class="btn-primary">Back to Store</a>
+      <a href="/platform" class="btn-secondary">View Platform</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-bottom" style="text-align:center;padding:2rem;">
+    <span>© 2025 Ceezaer. FAA Part 107 Certified. Round Rock, TX.</span>
+  </div>
+</footer>
+
+<script>
+  // Show session info if available
+  const params = new URLSearchParams(window.location.search);
+  const sessionId = params.get('session_id');
+  if (sessionId) {
+    document.getElementById('order-detail').textContent = `Order ref: ${sessionId.slice(-8).toUpperCase()}`;
+  }
+</script>
+</body>
+</html>

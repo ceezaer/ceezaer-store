@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core Pages -->
+  <url><loc>https://ceezaer.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/platform</loc><priority>0.95</priority><changefreq>weekly</changefreq><lastmod>2026-04-11</lastmod></url>
+
+  <!-- Product Pages -->
+  <url><loc>https://ceezaer.com/construction-monitoring</loc><priority>0.9</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/aerial-progress-tracking</loc><priority>0.85</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/drone-inspection/roofing</loc><priority>0.9</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/drone-inspection/infrastructure</loc><priority>0.85</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+
+  <!-- Solutions -->
+  <url><loc>https://ceezaer.com/solutions/automated-inspection-reports</loc><priority>0.85</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/solutions/digital-twin-construction</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/solutions/ai-anomaly-detection</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+
+  <!-- Industries -->
+  <url><loc>https://ceezaer.com/industries/construction</loc><priority>0.85</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/industries/solar-energy</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/industries/insurance</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+
+  <!-- Comparison Pages -->
+  <url><loc>https://ceezaer.com/compare/best-drone-analytics-software</loc><priority>0.85</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/compare/dronedeploy-alternative</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/compare/skycatch-alternative</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+
+  <!-- Location Pages -->
+  <url><loc>https://ceezaer.com/locations/austin-tx</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/locations/houston-tx</loc><priority>0.75</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/locations/dallas-tx</loc><priority>0.75</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/locations/san-antonio-tx</loc><priority>0.75</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+
+  <!-- Blog Hub -->
+  <url><loc>https://ceezaer.com/blog</loc><priority>0.8</priority><changefreq>daily</changefreq><lastmod>2026-04-11</lastmod></url>
+
+  <!-- Blog Articles — Real Estate & Local (New April 2026) -->
+  <url><loc>https://ceezaer.com/blog/drone-real-estate-photography-austin-tx</loc><priority>0.75</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/aerial-photography-real-estate-listings-sell-faster</loc><priority>0.75</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/round-rock-tx-drone-services</loc><priority>0.75</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+
+  <!-- Blog Articles — Construction Monitoring -->
+  <url><loc>https://ceezaer.com/blog/how-ai-drone-construction-monitoring-reduces-project-overruns</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/drone-construction-monitoring-complete-guide</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/real-time-construction-progress-tracking-drones</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/drone-vs-manual-construction-monitoring-cost</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/drone-roof-inspection-vs-manual</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/thermal-drone-roof-inspection-hidden-leaks</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/what-is-ai-construction-analytics</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/digital-twin-construction-drone-data</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/ai-anomaly-detection-construction-examples</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/drone-construction-monitoring-roi</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/orthomosaic-mapping-construction-sites</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/drone-earthwork-volume-calculations</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/construction-drone-regulations-texas</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/solar-panel-drone-inspection-guide</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/pipeline-inspection-drone-ai</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/drone-insurance-inspection-claims</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/bridge-inspection-drone-guide</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/computer-vision-construction-monitoring</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/bim-drone-integration-construction</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/choose-drone-analytics-platform-construction</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/drone-monitoring-high-rise-construction</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/aerial-time-lapse-construction-how-it-works</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/drone-construction-safety-compliance</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/austin-construction-boom-drone-monitoring</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://ceezaer.com/blog/wind-turbine-drone-inspection-ai</loc><priority>0.7</priority><changefreq>monthly</changefreq><lastmod>2026-04-11</lastmod></url>
+
+</urlset>
