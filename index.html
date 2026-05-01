@@ -3,562 +3,648 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ceezaer — Drone Services & Aerial Cinematography | Austin, TX</title>
-  <meta name="description" content="FAA Part 107 certified drone services in Austin, TX. Real estate photography, roof inspections, construction monitoring, aerial mapping, and cinematography.">
-  <link rel="canonical" href="https://ceezaer.com/">
+
+  <!-- SEO -->
+  <title>Ceezaer — Drone Services & Aerial Cinematography</title>
+  <meta name="description" content="Ceezaer provides professional drone services and aerial cinematography for film, real estate, events, and creative media projects.">
+  <meta name="keywords" content="drone services, aerial cinematography, drone photography, aerial filming, creative media">
+  <meta name="author" content="Ceezaer">
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ceezaer.com/">
+  <meta property="og:site_name" content="Ceezaer">
   <meta property="og:title" content="Ceezaer — Drone Services & Aerial Cinematography">
-  <meta property="og:description" content="FAA Part 107 certified drone services in Austin, TX.">
+  <meta property="og:description" content="Ceezaer provides professional drone services and aerial cinematography for film, real estate, events, and creative media projects.">
   <meta property="og:image" content="https://ceezaer.com/images/aerial-showcase.jpg">
+
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ceezaer.com/">
   <meta name="twitter:title" content="Ceezaer — Drone Services & Aerial Cinematography">
+  <meta name="twitter:description" content="Ceezaer provides professional drone services and aerial cinematography for film, real estate, events, and creative media projects.">
   <meta name="twitter:image" content="https://ceezaer.com/images/aerial-showcase.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://ceezaer.com/">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ceezaer Drone Services","url":"https://ceezaer.com","telephone":"+15127481622","email":"info@ceezaer.com","description":"FAA Part 107 certified drone services in Austin, TX.","priceRange":"$250-$500+","address":{"@type":"PostalAddress","addressLocality":"Round Rock","addressRegion":"TX","postalCode":"78681","addressCountry":"US"},"areaServed":["Austin, TX","Round Rock, TX","Cedar Park, TX","Georgetown, TX"]}
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ceezaer Drone Services",
+    "url": "https://ceezaer.com",
+    "image": "https://ceezaer.com/images/aerial-showcase.jpg",
+    "logo": "https://ceezaer.com/images/favicon.svg",
+    "telephone": "+15127481622",
+    "email": "info@ceezaer.com",
+    "description": "FAA Part 107 certified drone services in Austin, TX including aerial photography, real estate photography, roof inspections, construction monitoring, drone mapping and commercial cinematography.",
+    "priceRange": "$250-$500+",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Round Rock",
+      "addressRegion": "TX",
+      "postalCode": "78681",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.5083,
+      "longitude": -97.6789
+    },
+    "areaServed": [
+      "Austin, TX",
+      "Round Rock, TX",
+      "Cedar Park, TX",
+      "Georgetown, TX",
+      "Pflugerville, TX",
+      "Leander, TX",
+      "Buda, TX"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Drone Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Real Estate Aerial Photography"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Roof Inspection"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Construction Monitoring"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drone Mapping & Surveying"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Aerial Cinematography"}}
+      ]
+    },
+    "sameAs": [
+      "https://www.instagram.com/ceezaer",
+      "https://www.youtube.com/@ceezaer",
+      "https://www.linkedin.com/in/ceezaer"
+    ]
+  }
   </script>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --sidebar-w: 340px;
-      --bg: #000;
-      --text: #fff;
-      --muted: rgba(255,255,255,0.45);
-      --border: rgba(255,255,255,0.08);
-    }
-
-    html, body { height: 100%; background: var(--bg); color: var(--text); font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden; }
-
-    /* ── LAYOUT ── */
-    #wrapper { display: flex; height: 100vh; }
-
-    /* ── SIDEBAR ── */
-    #sidebar {
-      width: var(--sidebar-w);
-      flex-shrink: 0;
-      height: 100vh;
-      overflow-y: auto;
-      background: rgba(0,0,0,0.96);
-      border-right: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      padding: 3rem 2.25rem;
-      position: relative;
-      z-index: 10;
-    }
-    #sidebar::-webkit-scrollbar { width: 0; }
-
-    .sidebar-logo {
-      font-size: 1.5rem;
-      font-weight: 900;
-      letter-spacing: 0.04em;
-      color: #fff;
-      text-decoration: none;
-      margin-bottom: 0.5rem;
-      display: block;
-    }
-    .sidebar-tagline {
-      font-size: 0.78rem;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 2rem;
-    }
-
-    .sidebar-creds {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-bottom: 2.5rem;
-    }
-    .sidebar-cred {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.3);
-    }
-
-    .sidebar-nav {
-      display: flex;
-      flex-direction: column;
-      gap: 0.15rem;
-      margin-bottom: 2.5rem;
-    }
-    .sidebar-nav a {
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-decoration: none;
-      padding: 0.5rem 0;
-      border-bottom: 1px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .sidebar-nav a:hover { color: #fff; border-color: rgba(255,255,255,0.15); }
-
-    .sidebar-cta {
-      display: block;
-      text-align: center;
-      background: #fff;
-      color: #000;
-      font-size: 0.75rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 14px 20px;
-      border-radius: 3px;
-      margin-bottom: 2.5rem;
-      transition: background 0.2s;
-    }
-    .sidebar-cta:hover { background: rgba(255,255,255,0.88); }
-
-    .sidebar-social {
-      display: flex;
-      gap: 1.25rem;
-      margin-top: auto;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-    }
-    .sidebar-social a {
-      color: rgba(255,255,255,0.3);
-      text-decoration: none;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    .sidebar-social a:hover { color: #fff; }
-
-    /* ── MAIN GRID ── */
-    #main {
-      flex: 1;
-      height: 100vh;
-      overflow-y: auto;
-    }
-    #main::-webkit-scrollbar { width: 4px; }
-    #main::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); }
-
-    #thumbnails {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3px;
-      padding: 3px;
-    }
-
-    .thumb-item {
-      position: relative;
-      aspect-ratio: 4/3;
-      overflow: hidden;
-      cursor: pointer;
-      background: #0a0a0a;
-    }
-    .thumb-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s cubic-bezier(0.25,0.1,0.25,1);
-    }
-    .thumb-item:hover img { transform: scale(1.04); }
-
-    .thumb-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 50%);
-      opacity: 0;
-      transition: opacity 0.35s;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 1.5rem;
-    }
-    .thumb-item:hover .thumb-overlay { opacity: 1; }
-
-    .thumb-cat {
-      font-size: 0.6rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.6);
-      margin-bottom: 0.3rem;
-    }
-    .thumb-title {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: #fff;
-    }
-
-    /* footer inside grid */
-    #grid-footer {
-      grid-column: 1 / -1;
-      padding: 2rem;
-      text-align: center;
-      border-top: 1px solid var(--border);
-    }
-    #grid-footer p {
-      font-size: 0.65rem;
-      color: rgba(255,255,255,0.2);
-      letter-spacing: 0.06em;
-    }
-    #grid-footer a { color: rgba(255,255,255,0.3); text-decoration: none; }
-    #grid-footer a:hover { color: rgba(255,255,255,0.6); }
-
-    /* ── VIEWER ── */
-    #viewer {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 1000;
-      background: rgba(0,0,0,0.97);
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    #viewer.active { display: flex; }
-
-    #viewer-img {
-      max-width: 90vw;
-      max-height: 80vh;
-      object-fit: contain;
-      display: block;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-    #viewer-img.loaded { opacity: 1; }
-
-    #viewer-caption {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-    }
-    #viewer-cat {
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.4);
-      margin-bottom: 0.4rem;
-    }
-    #viewer-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    #viewer-link {
-      display: inline-block;
-      margin-top: 0.75rem;
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-      padding-bottom: 2px;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    #viewer-link:hover { color: #fff; border-color: #fff; }
-
-    .viewer-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: 1px solid rgba(255,255,255,0.15);
-      color: rgba(255,255,255,0.6);
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s, color 0.2s, border-color 0.2s;
-    }
-    .viewer-btn:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.4); }
-    #viewer-prev { left: 2rem; }
-    #viewer-next { right: 2rem; }
-
-    #viewer-close {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      background: none;
-      border: 1px solid rgba(255,255,255,0.15);
-      color: rgba(255,255,255,0.6);
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s, color 0.2s;
-    }
-    #viewer-close:hover { background: rgba(255,255,255,0.08); color: #fff; }
-
-    #viewer-counter {
-      position: absolute;
-      top: 1.75rem;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 0.65rem;
-      letter-spacing: 0.12em;
-      color: rgba(255,255,255,0.3);
-    }
-
-    /* ── MOBILE ── */
-    @media (max-width: 900px) {
-      html, body { overflow: auto; }
-      #wrapper { flex-direction: column; height: auto; }
-      #sidebar {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        padding: 2rem 1.5rem;
-        overflow: visible;
-      }
-      .sidebar-nav { flex-direction: row; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
-      .sidebar-nav a { border-bottom: none; }
-      .sidebar-social { margin-top: 1.5rem; padding-top: 1.5rem; }
-      #main { height: auto; overflow: visible; }
-      #thumbnails { gap: 2px; padding: 2px; }
-      .viewer-btn { display: none; }
-    }
-    @media (max-width: 480px) {
-      #thumbnails { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 <body>
+  <div class="grain" aria-hidden="true"></div>
 
-<div id="wrapper">
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Ceezaer">€eez∆eR</a>
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <a href="#get-in-touch" class="header-cta">Get in Touch</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-  <!-- SIDEBAR -->
-  <aside id="sidebar">
-    <a href="/" class="sidebar-logo">€eez∆eR</a>
-    <p class="sidebar-tagline">Drone Services &amp; Aerial Cinematography<br>Round Rock, TX · Austin Metro</p>
+  <!-- Navigation Backdrop -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
 
-    <div class="sidebar-creds">
-      <span class="sidebar-cred">✓ FAA Part 107 Certified</span>
-      <span class="sidebar-cred">✓ FCC Radio Licensed</span>
-      <span class="sidebar-cred">✓ $1.5M Insured</span>
+  <!-- Slide-over Navigation -->
+  <nav class="main-nav" id="main-nav" aria-label="Main navigation" role="navigation">
+    <a href="/" class="nav-link active">Home</a>
+    <a href="/about" class="nav-link">About</a>
+    <a href="/services" class="nav-link">Services</a>
+    <a href="/mapping" class="nav-link">Mapping</a>
+    <a href="/insurance" class="nav-link">Insurance</a>
+    <a href="/work" class="nav-link">Work</a>
+    <a href="/work-with-me" class="nav-link">Work With Me</a>
+    <a href="/licenses" class="nav-link">Licenses</a>
+    <a href="/other-worlds" class="nav-link">Other Worlds</a>
+    <a href="/store" class="nav-link">Store</a>
+    <a href="/platform" class="nav-link">Platform <span class="nav-badge">New</span></a>
+    <a href="/blog" class="nav-link">Blog</a>
+    <a href="/contact" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero hero-video">
+      <div class="hero-video-bg">
+        <iframe id="hero-yt" src="https://www.youtube.com/embed/30jZnNDfPIQ?autoplay=1&mute=1&loop=1&playlist=30jZnNDfPIQ&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="hero-video-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-brand">€eez∆eR</span>
+        <h1 class="hero-tagline">Drone Services & Aerial Cinematography in Austin, TX</h1>
+        <p class="hero-descriptor">FAA Part 107 Certified &bull; FCC Licensed &bull; $1.5M Insured</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-large" href="#get-in-touch">Request a Free Quote</a>
+          <a class="btn btn-secondary btn-large" href="/services">Explore Our Services</a>
+        </div>
+        <p class="hero-microcopy">No commitment required &mdash; most quotes delivered same day</p>
+      </div>
+    </section>
+
+    <!-- Credentials Bar -->
+    <div class="credentials-bar reveal">
+      <span class="credential-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        FAA Part 107 Certified
+      </span>
+      <span class="credential-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.858 15.355-5.858 21.213 0"/></svg>
+        FCC Radio Licensed
+      </span>
+      <span class="credential-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        $1.5M Insured
+      </span>
     </div>
 
-    <nav class="sidebar-nav">
-      <a href="/services">Services</a>
-      <a href="/work">Work</a>
-      <a href="/store">Store</a>
-      <a href="/platform">Platform</a>
-      <a href="/blog">Blog</a>
-      <a href="/contact">Contact</a>
-    </nav>
-
-    <a href="/contact" class="sidebar-cta">Book a Service →</a>
-
-    <div class="sidebar-social">
-      <a href="https://www.instagram.com/ceezaer" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.youtube.com/@ceezaer" target="_blank" rel="noopener">YouTube</a>
-      <a href="mailto:info@ceezaer.com">Email</a>
-    </div>
-  </aside>
-
-  <!-- GRID -->
-  <main id="main">
-    <div id="thumbnails">
-
-      <div class="thumb-item" data-index="0">
-        <img src="/images/aerial-showcase.jpg" alt="Aerial Showcase" loading="eager">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Cinematography</p>
-          <p class="thumb-title">Aerial Showcase</p>
+    <!-- Service Showcase 1: Real Estate Drone Photography -->
+    <section class="service-showcase reveal">
+      <div class="service-showcase-bg">
+        <img src="/images/real-estate-aerial.jpg" alt="Aerial drone view of luxury waterfront properties" loading="lazy">
+      </div>
+      <div class="service-showcase-content">
+        <div class="service-showcase-inner">
+          <p class="service-showcase-label">Real Estate Drone Photography</p>
+          <h2 class="service-showcase-title">Elevate Your Listings</h2>
+          <p class="service-showcase-desc">Showcase properties from breathtaking aerial perspectives. High-resolution photos and cinematic video that capture the full scope of luxury homes, commercial properties, and developments.</p>
+          <ul class="service-showcase-features">
+            <li>4K Aerial Video</li>
+            <li>HDR Photography</li>
+            <li>Virtual Tours</li>
+            <li>Property Overviews</li>
+          </ul>
+          <a href="/services/real-estate" class="btn btn-primary">See Aerial Samples &rsaquo;</a>
         </div>
       </div>
+    </section>
 
-      <div class="thumb-item" data-index="1">
-        <img src="/images/real-estate-aerial.jpg" alt="Real Estate Aerial" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Real Estate</p>
-          <p class="thumb-title">Property Listings</p>
+    <!-- Service Showcase 2: Aerial Cinematography -->
+    <section class="service-showcase reverse reveal">
+      <div class="service-showcase-bg">
+        <img src="/images/nature-documentary.jpg" alt="Dramatic waterfalls cascading through misty landscape" loading="lazy">
+      </div>
+      <div class="service-showcase-content">
+        <div class="service-showcase-inner">
+          <p class="service-showcase-label">Aerial Cinematography</p>
+          <h2 class="service-showcase-title">Cinematic Vision, From Above</h2>
+          <p class="service-showcase-desc">Professional drone footage for films, commercials, music videos, and creative projects. 4K+ resolution with professional color grading — footage that transforms your creative vision into reality.</p>
+          <ul class="service-showcase-features">
+            <li>Cinema-Grade 4K+</li>
+            <li>Color Grading</li>
+            <li>FPV Shots</li>
+            <li>Creative Direction</li>
+          </ul>
+          <a href="/services/media" class="btn btn-primary">View Our Reel &rsaquo;</a>
         </div>
       </div>
+    </section>
 
-      <div class="thumb-item" data-index="2">
-        <img src="/images/urban-perspectives.jpg" alt="Urban Perspectives" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Drone Photography</p>
-          <p class="thumb-title">Urban Perspectives</p>
+    <!-- Service Showcase 3: Construction Monitoring -->
+    <section class="service-showcase reveal">
+      <div class="service-showcase-bg">
+        <img src="/images/urban-perspectives.jpg" alt="Aerial drone view of a modern building and cityscape" loading="lazy">
+      </div>
+      <div class="service-showcase-content">
+        <div class="service-showcase-inner">
+          <p class="service-showcase-label">Construction Monitoring</p>
+          <h2 class="service-showcase-title">Track Progress From Above</h2>
+          <p class="service-showcase-desc">Comprehensive aerial documentation for construction sites. Regular flyovers capture site progress, verify compliance, and provide stakeholders with clear visual updates at every phase of development.</p>
+          <ul class="service-showcase-features">
+            <li>Progress Reports</li>
+            <li>Site Overviews</li>
+            <li>Time-Lapse</li>
+            <li>Stakeholder Updates</li>
+          </ul>
+          <a href="/services/inspections" class="btn btn-primary">See How It Works &rsaquo;</a>
         </div>
       </div>
+    </section>
 
-      <div class="thumb-item" data-index="3">
-        <img src="/images/nature-documentary.jpg" alt="Nature Documentary" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Film Production</p>
-          <p class="thumb-title">Nature Documentary</p>
+    <!-- Service Showcase 4: Roof Inspection -->
+    <section class="service-showcase reverse reveal">
+      <div class="service-showcase-bg">
+        <img src="/images/coastal-views.jpg" alt="Aerial photograph of coastline and infrastructure" loading="lazy">
+      </div>
+      <div class="service-showcase-content">
+        <div class="service-showcase-inner">
+          <p class="service-showcase-label">Roof Inspection</p>
+          <h2 class="service-showcase-title">Safer, Smarter Inspections</h2>
+          <p class="service-showcase-desc">Professional drone inspections for roofs, towers, and infrastructure. Eliminate risk, reduce costs, and get detailed visual reports — all without ladders or scaffolding.</p>
+          <ul class="service-showcase-features">
+            <li>High-Res Imagery</li>
+            <li>Damage Detection</li>
+            <li>Thermal Imaging</li>
+            <li>Detailed Reports</li>
+          </ul>
+          <a href="/services/inspections" class="btn btn-primary">Get an Inspection Quote &rsaquo;</a>
         </div>
       </div>
+    </section>
 
-      <div class="thumb-item" data-index="4">
-        <img src="/images/sunset-sessions.jpg" alt="Sunset Sessions" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Creative</p>
-          <p class="thumb-title">Sunset Sessions</p>
+    <!-- Service Showcase 5: Drone Mapping -->
+    <section class="service-showcase reveal">
+      <div class="service-showcase-bg">
+        <img src="/images/mountain-expedition.jpg" alt="Aerial drone view of a dramatic mountain valley" loading="lazy">
+      </div>
+      <div class="service-showcase-content">
+        <div class="service-showcase-inner">
+          <p class="service-showcase-label">Drone Mapping</p>
+          <h2 class="service-showcase-title">Precision Aerial Intelligence</h2>
+          <p class="service-showcase-desc">Orthomosaic maps, 3D models, and topographic data for construction, agriculture, and land management. Survey-grade accuracy that transforms raw aerial data into actionable insights.</p>
+          <ul class="service-showcase-features">
+            <li>Orthomosaic Maps</li>
+            <li>3D Models</li>
+            <li>Volume Calculations</li>
+            <li>Elevation Data</li>
+          </ul>
+          <a href="/services/mapping" class="btn btn-primary">Discover Mapping Solutions &rsaquo;</a>
         </div>
       </div>
+    </section>
 
-      <div class="thumb-item" data-index="5">
-        <img src="/images/coastal-views.jpg" alt="Coastal Views" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Roof Inspection</p>
-          <p class="thumb-title">Infrastructure Survey</p>
+    <!-- Featured Work Preview -->
+    <section class="section-large" style="background: var(--color-bg-elevated);">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-subtitle">Selected Projects</p>
+          <h2 class="section-title">Featured Work</h2>
+        </header>
+        <div class="portfolio-grid reveal">
+          <article class="portfolio-item">
+            <img src="/images/aerial-showcase.jpg" alt="Aerial Showcase - Panoramic aerial view of city skyline at sunset with dramatic fisheye perspective" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">Aerial Showcase</h3>
+              <p class="portfolio-category">Cinematography</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="/images/urban-perspectives.jpg" alt="Urban Perspectives - Aerial drone view of a modern high-rise building at dusk with a river and cityscape in the background" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">Urban Perspectives</h3>
+              <p class="portfolio-category">Drone Photography</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="/images/nature-documentary.jpg" alt="Nature Documentary - Dramatic waterfalls cascading through misty landscape" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">Nature Documentary</h3>
+              <p class="portfolio-category">Film Production</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="/images/event-coverage.jpg" alt="Event Coverage - Aerial view of Guanabara Bay with hundreds of sailboats" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">Event Coverage</h3>
+              <p class="portfolio-category">Live Production</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="/images/sunset-sessions.jpg" alt="Sunset Sessions - Aerial drone view of a coastal Mediterranean village at golden hour" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">Sunset Sessions</h3>
+              <p class="portfolio-category">Creative</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="/images/commercial-spot.jpg" alt="Commercial Spot - Cruise ship sailing through calm waters with mountainous coastline" class="portfolio-image">
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-title">Commercial Spot</h3>
+              <p class="portfolio-category">Advertising</p>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-lg reveal">
+          <a class="btn btn-secondary" href="/work">Explore the Full Portfolio</a>
         </div>
       </div>
+    </section>
 
-      <div class="thumb-item" data-index="6">
-        <img src="/images/event-coverage.jpg" alt="Event Coverage" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Live Production</p>
-          <p class="thumb-title">Event Coverage</p>
+    <!-- Services Preview -->
+    <section class="section-large">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-subtitle">What We Offer</p>
+          <h2 class="section-title">Services</h2>
+        </header>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <span class="service-icon">🎬</span>
+            <h3 class="service-title">Aerial Cinematography</h3>
+            <p class="service-description">Cinematic drone footage for films, commercials, and creative projects. 4K+ resolution with professional color grading.</p>
+            <a class="btn btn-secondary" href="/services">View Our Reel &rsaquo;</a>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon">📸</span>
+            <h3 class="service-title">Drone Photography</h3>
+            <p class="service-description">High-resolution aerial photography for real estate, events, and marketing materials.</p>
+            <a class="btn btn-secondary" href="/services">See Photo Samples &rsaquo;</a>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon">🎯</span>
+            <h3 class="service-title">Custom Projects</h3>
+            <p class="service-description">Tailored drone solutions for unique requirements. Mapping, inspection, and specialized aerial work.</p>
+            <a class="btn btn-secondary" href="/services">Start Your Project &rsaquo;</a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="thumb-item" data-index="7">
-        <img src="/images/mountain-expedition.jpg" alt="Mountain Expedition" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Drone Mapping</p>
-          <p class="thumb-title">Terrain Mapping</p>
+    <!-- Recent Posts -->
+    <section class="section-large" style="background: var(--color-bg-elevated);">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-subtitle">From the Blog</p>
+          <h2 class="section-title">Drone Industry Insights</h2>
+        </header>
+        <div class="blog-cards-grid reveal">
+          <article class="blog-card">
+            <p class="blog-card-category">Real Estate</p>
+            <h3 class="blog-card-title">Drone Real Estate Photography Austin TX — Aerial Listings That Sell</h3>
+            <p class="blog-card-excerpt">FAA Part 107 certified aerial photography in Austin TX. Same-week scheduling, 24-hour delivery, MLS-ready files.</p>
+            <a href="/blog/drone-real-estate-photography-austin-tx" class="blog-card-link">Read Article &rsaquo;</a>
+          </article>
+          <article class="blog-card">
+            <p class="blog-card-category">Real Estate</p>
+            <h3 class="blog-card-title">Does Aerial Photography Help Real Estate Listings Sell Faster? The Data</h3>
+            <p class="blog-card-excerpt">Real numbers on how drone photography affects days on market, sale price, and listing views for Austin TX sellers.</p>
+            <a href="/blog/aerial-photography-real-estate-listings-sell-faster" class="blog-card-link">Read Article &rsaquo;</a>
+          </article>
+          <article class="blog-card">
+            <p class="blog-card-category">Construction</p>
+            <h3 class="blog-card-title">Drone Construction Monitoring ROI: A Real Numbers Breakdown</h3>
+            <p class="blog-card-excerpt">Calculate the true return on investment from aerial drone monitoring — with real cost comparisons and payback period analysis.</p>
+            <a href="/blog/drone-construction-monitoring-roi" class="blog-card-link">Read Article &rsaquo;</a>
+          </article>
+          <article class="blog-card">
+            <p class="blog-card-category">Construction</p>
+            <h3 class="blog-card-title">Austin's Construction Boom: Why Drone Monitoring Is Now Essential</h3>
+            <p class="blog-card-excerpt">Austin TX is one of the fastest-growing construction markets in the US. Here's why drone monitoring is becoming standard practice for GCs.</p>
+            <a href="/blog/austin-construction-boom-drone-monitoring" class="blog-card-link">Read Article &rsaquo;</a>
+          </article>
+          <article class="blog-card">
+            <p class="blog-card-category">Roof Inspection</p>
+            <h3 class="blog-card-title">Thermal Drone Roof Inspections: Finding Hidden Leaks Before They Cost Thousands</h3>
+            <p class="blog-card-excerpt">How thermal imaging drone inspections detect roof moisture, hidden leaks, and insulation failures that no visual inspection can find.</p>
+            <a href="/blog/thermal-drone-roof-inspection-hidden-leaks" class="blog-card-link">Read Article &rsaquo;</a>
+          </article>
+          <article class="blog-card">
+            <p class="blog-card-category">Roof Inspection</p>
+            <h3 class="blog-card-title">Drone Roof Inspection vs Manual Inspection: Full Comparison</h3>
+            <p class="blog-card-excerpt">Compare drone roof inspections against traditional manual inspections on cost, safety, accuracy, turnaround time, and insurance acceptance.</p>
+            <a href="/blog/drone-roof-inspection-vs-manual" class="blog-card-link">Read Article &rsaquo;</a>
+          </article>
+        </div>
+        <div class="text-center mt-lg reveal">
+          <a class="btn btn-secondary" href="/blog">View All Articles &rsaquo;</a>
         </div>
       </div>
+    </section>
 
-      <div class="thumb-item" data-index="8">
-        <img src="/images/commercial-spot.jpg" alt="Commercial" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Advertising</p>
-          <p class="thumb-title">Commercial Spot</p>
+    <!-- Get in Touch Section -->
+    <section class="inquiry-section" id="get-in-touch" style="background: var(--color-bg-elevated);">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-subtitle">Get Started</p>
+          <h2 class="section-title">Ready to Capture Your Vision from Above?</h2>
+          <p style="color: var(--color-text-muted); font-weight: 300; max-width: 600px; margin: var(--spacing-sm) auto 0; line-height: 1.8;">Tell us about your project and we'll get back to you within 24 hours with a custom plan and quote.</p>
+          <p class="form-social-proof">Trusted by real estate teams, production houses, and developers across Austin</p>
+        </header>
+        <div class="inquiry-form-wrapper reveal">
+          <form class='inquiry-form' id='inquiry-form-home' method='POST' name='inquiry'>
+            <input type="hidden" name="form-name" value="inquiry">
+            <input type="hidden" name="subject" value="New inquiry from %{formName}">
+            <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <div class="form-group">
+              <label for="home-name">Name</label>
+              <input type="text" id="home-name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="home-company">Company / Project <span class="optional">(optional)</span></label>
+              <input type="text" id="home-company" name="company" placeholder="Company or project name">
+            </div>
+            <div class="form-group">
+              <label for="home-email">Email</label>
+              <input type="email" id="home-email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="home-phone">Phone</label>
+              <input type="tel" id="home-phone" name="phone" placeholder="+1 (512) 555-0123" required>
+            </div>
+            <div class="form-group">
+              <label for="home-service">Service Interested In</label>
+              <select id="home-service" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="Real Estate Drone Photography">Real Estate Drone Photography</option>
+                <option value="Aerial Cinematography">Aerial Cinematography</option>
+                <option value="Construction Monitoring">Construction Monitoring</option>
+                <option value="Roof Inspection">Roof Inspection</option>
+                <option value="Drone Mapping">Drone Mapping</option>
+                <option value="Custom Project / Other">Custom Project / Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="home-location">Project Location / City</label>
+              <input type="text" id="home-location" name="location" placeholder="Austin, TX" required>
+            </div>
+            <div class="form-group">
+              <label for="home-date">Preferred Date or Timeline</label>
+              <div class="date-row">
+                <input type="date" id="home-date" name="preferred-date">
+                <label class="flexible-check">
+                  <input type="checkbox" name="flexible-date" value="yes">
+                  <span>Flexible</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="home-budget">Budget Range <span class="optional">(optional)</span></label>
+              <select id="home-budget" name="budget">
+                <option value="" selected>Select budget range...</option>
+                <option value="Under $1k">Under $1k</option>
+                <option value="$1k-$3k">$1k – $3k</option>
+                <option value="$3k-$5k">$3k – $5k</option>
+                <option value="$5k+">$5k+</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="home-description">Brief Project Description</label>
+              <textarea id="home-description" name="description" placeholder="Tell us about your project, goals, and any specific requirements..." rows="4" required></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">
+              <span class="spinner"></span>
+              <span class="btn-text">Send Inquiry — We Reply in &lt;24 hrs</span>
+            </button>
+          </form>
+          <div class="form-success">
+            <div class="success-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <h3>Inquiry Sent!</h3>
+            <p>We'll email you within 24 hours with a custom plan and quote.</p>
+            <a href="https://calendly.com/ceezaer/new-meeting" target="_blank" rel="noopener" class="btn btn-secondary">Book a Call Now</a>
+          </div>
+          <div class="trust-signals">
+            <span class="trust-signal">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              FAA Part 107 Certified
+            </span>
+            <span class="trust-signal">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              $1.5M Insured
+            </span>
+            <span class="trust-signal">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              24–48 hr Response
+            </span>
+          </div>
         </div>
       </div>
-
-      <div class="thumb-item" data-index="9">
-        <img src="/images/services-hero.jpg" alt="Construction Monitoring" loading="lazy">
-        <div class="thumb-overlay">
-          <p class="thumb-cat">Construction Monitoring</p>
-          <p class="thumb-title">Site Progress</p>
-        </div>
-      </div>
-
-      <div id="grid-footer">
-        <p>&copy; 2026 Ceezaer LLC &nbsp;&middot;&nbsp; Round Rock, TX &nbsp;&middot;&nbsp;
-          <a href="mailto:info@ceezaer.com">info@ceezaer.com</a> &nbsp;&middot;&nbsp;
-          <a href="/blog">Blog</a> &nbsp;&middot;&nbsp;
-          <a href="/contact">Contact</a>
-        </p>
-      </div>
-
-    </div>
+    </section>
   </main>
 
-</div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/" class="footer-link active">Home</a>
+      <a href="/about" class="footer-link">About</a>
+      <a href="/services" class="footer-link">Services</a>
+      <a href="/mapping" class="footer-link">Mapping</a>
+      <a href="/insurance" class="footer-link">Insurance</a>
+      <a href="/work" class="footer-link">Work</a>
+      <a href="/work-with-me" class="footer-link">Work With Me</a>
+      <a href="/licenses" class="footer-link">Licenses</a>
+      <a href="/other-worlds" class="footer-link">Other Worlds</a>
+      <a href="/store" class="footer-link">Store</a>
+      <a href="/platform" class="footer-link">Platform</a>
+        <a href="/blog" class="footer-link">Blog</a>
+      <a href="/contact" class="footer-link">Contact</a>
+      </nav>
+      <div class="footer-social" aria-label="Social media links"></div>
+      <p class="footer-copyright">&copy; <span class="footer-year">2026</span> Ceezaer&trade; &mdash; Drone Services &amp; Aerial Cinematography. All rights reserved.</p>
+    </div>
+  </footer>
 
-<!-- LIGHTBOX VIEWER -->
-<div id="viewer" role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <span id="viewer-counter"></span>
-  <button id="viewer-close" aria-label="Close viewer">✕</button>
-  <button id="viewer-prev" class="viewer-btn" aria-label="Previous photo">&#8592;</button>
-  <img id="viewer-img" src="" alt="">
-  <button id="viewer-next" class="viewer-btn" aria-label="Next photo">&#8594;</button>
-  <div id="viewer-caption">
-    <p id="viewer-cat"></p>
-    <p id="viewer-title"></p>
-    <a id="viewer-link" href="/services">View Services →</a>
-  </div>
-</div>
+  <!-- Navigation + Scroll Reveal Script -->
+  <script>
+    (function() {
+      var toggle = document.getElementById('nav-toggle');
+      var nav = document.getElementById('main-nav');
+      var backdrop = document.getElementById('nav-backdrop');
+      var header = document.getElementById('site-header');
 
-<script>
-(function() {
-  var photos = [
-    { src: '/images/aerial-showcase.jpg',    cat: 'Cinematography',         title: 'Aerial Showcase',       link: '/services',               label: 'Aerial Cinematography →' },
-    { src: '/images/real-estate-aerial.jpg', cat: 'Real Estate',            title: 'Property Listings',     link: '/store',                  label: 'Book Real Estate Shoot →' },
-    { src: '/images/urban-perspectives.jpg', cat: 'Drone Photography',      title: 'Urban Perspectives',    link: '/services',               label: 'Explore Services →' },
-    { src: '/images/nature-documentary.jpg', cat: 'Film Production',        title: 'Nature Documentary',    link: '/services',               label: 'Aerial Cinematography →' },
-    { src: '/images/sunset-sessions.jpg',    cat: 'Creative',               title: 'Sunset Sessions',       link: '/work',                   label: 'View Our Work →' },
-    { src: '/images/coastal-views.jpg',      cat: 'Roof Inspection',        title: 'Infrastructure Survey', link: '/drone-inspection/roofing', label: 'Book a Roof Inspection →' },
-    { src: '/images/event-coverage.jpg',     cat: 'Live Production',        title: 'Event Coverage',        link: '/services',               label: 'Explore Services →' },
-    { src: '/images/mountain-expedition.jpg',cat: 'Drone Mapping',          title: 'Terrain Mapping',       link: '/construction-monitoring',label: 'Construction Monitoring →' },
-    { src: '/images/commercial-spot.jpg',    cat: 'Advertising',            title: 'Commercial Spot',       link: '/services',               label: 'Aerial Cinematography →' },
-    { src: '/images/services-hero.jpg',      cat: 'Construction Monitoring',title: 'Site Progress',         link: '/construction-monitoring',label: 'Construction Monitoring →' }
-  ];
+      function openMenu() {
+        nav.classList.add('active');
+        backdrop.classList.add('active');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Close menu');
+        document.body.style.overflow = 'hidden';
+        var firstLink = nav.querySelector('.nav-link');
+        if (firstLink) firstLink.focus();
+      }
 
-  var viewer   = document.getElementById('viewer');
-  var vImg     = document.getElementById('viewer-img');
-  var vCat     = document.getElementById('viewer-cat');
-  var vTitle   = document.getElementById('viewer-title');
-  var vLink    = document.getElementById('viewer-link');
-  var vCounter = document.getElementById('viewer-counter');
-  var current  = 0;
+      function closeMenu() {
+        nav.classList.remove('active');
+        backdrop.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
+        document.body.style.overflow = '';
+        toggle.focus();
+      }
 
-  function open(idx) {
-    current = ((idx % photos.length) + photos.length) % photos.length;
-    var p = photos[current];
-    vImg.classList.remove('loaded');
-    vImg.src = p.src;
-    vImg.alt = p.title;
-    vImg.onload = function() { vImg.classList.add('loaded'); };
-    vCat.textContent   = p.cat;
-    vTitle.textContent = p.title;
-    vLink.href         = p.link;
-    vLink.textContent  = p.label;
-    vCounter.textContent = (current + 1) + ' / ' + photos.length;
-    viewer.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
+      toggle.addEventListener('click', function() {
+        var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        if (isOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
 
-  function close() {
-    viewer.classList.remove('active');
-    document.body.style.overflow = '';
-    vImg.src = '';
-  }
+      backdrop.addEventListener('click', closeMenu);
 
-  document.querySelectorAll('.thumb-item').forEach(function(el) {
-    el.addEventListener('click', function() { open(parseInt(el.dataset.index)); });
-  });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          closeMenu();
+        }
+      });
 
-  document.getElementById('viewer-close').addEventListener('click', close);
-  document.getElementById('viewer-prev').addEventListener('click', function() { open(current - 1); });
-  document.getElementById('viewer-next').addEventListener('click', function() { open(current + 1); });
+      nav.querySelectorAll('.nav-link').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
 
-  viewer.addEventListener('click', function(e) {
-    if (e.target === viewer) close();
-  });
+      // Header scroll effect
+      function onScroll() {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
 
-  document.addEventListener('keydown', function(e) {
-    if (!viewer.classList.contains('active')) return;
-    if (e.key === 'Escape')     close();
-    if (e.key === 'ArrowLeft')  open(current - 1);
-    if (e.key === 'ArrowRight') open(current + 1);
-  });
+      // Scroll-reveal animation via IntersectionObserver
+      var reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
-  // Touch swipe
-  var touchX = null;
-  viewer.addEventListener('touchstart', function(e) { touchX = e.touches[0].clientX; }, { passive: true });
-  viewer.addEventListener('touchend', function(e) {
-    if (touchX === null) return;
-    var dx = e.changedTouches[0].clientX - touchX;
-    if (Math.abs(dx) > 50) dx < 0 ? open(current + 1) : open(current - 1);
-    touchX = null;
-  });
-})();
-</script>
-
+        reveals.forEach(function(el) {
+          observer.observe(el);
+        });
+      } else {
+        reveals.forEach(function(el) {
+          el.classList.add('visible');
+        });
+      }
+    })();
+  </script>
+  <script src="/js/inquiry-form.js"></script>
+  <script src="/assets/js/email.js"></script>
+  <script src="/js/footer-enhance.js"></script>
+  <script>
+    var overlay = document.querySelector('.hero-video-overlay');
+    function onYouTubeIframeAPIReady() {
+      var player = new YT.Player('hero-yt', {
+        events: {
+          onStateChange: function(e) {
+            if (e.data === YT.PlayerState.PLAYING && overlay) {
+              overlay.classList.add('playing');
+            }
+            if (e.data === YT.PlayerState.ENDED) {
+              player.seekTo(0, true);
+              player.playVideo();
+            }
+          },
+          onReady: function(e) {
+            e.target.playVideo();
+            setInterval(function() {
+              if (player.getPlayerState && player.getPlayerState() === YT.PlayerState.PLAYING) {
+                var dur = player.getDuration();
+                var cur = player.getCurrentTime();
+                if (dur > 0 && cur >= dur - 10) {
+                  player.seekTo(0, true);
+                }
+              }
+            }, 500);
+          }
+        }
+      });
+    }
+    var s = document.createElement('script');
+    s.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(s);
+  </script>
 </body>
 </html>
