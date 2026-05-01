@@ -1,6 +1,6 @@
 /* ============================================================
    CEEZAER — Shared Stylesheet
-   Brand: #00C6FF / #0072FF  |  Dark: #0a0a0f
+   Brand: #00C6FF / #0072FF  |  Dark: #000000
    ============================================================ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -8,23 +8,24 @@
 :root {
   --brand:  #00C6FF;
   --brand2: #0072FF;
-  --dark:   #0a0a0f;
-  --card:   #12121a;
+  --dark:   #000000;
+  --card:   #0a0a0a;
   --border: rgba(255,255,255,0.08);
-  --text:   #f0f0f0;
-  --muted:  #888;
-  --radius: 16px;
+  --text:   #ffffff;
+  --muted:  #999;
+  --radius: 12px;
   --max:    1080px;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Helvetica Neue", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--dark);
   color: var(--text);
   min-height: 100vh;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ── TYPOGRAPHY ── */
@@ -41,43 +42,48 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 2rem;
-  max-width: var(--max);
+  max-width: 1400px;
   margin: 0 auto;
   border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 100;
 }
 .nav-logo {
-  font-size: 1.2rem;
-  font-weight: 900;
-  background: linear-gradient(135deg, var(--brand), var(--brand2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: -0.5px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.04em;
   text-decoration: none;
+  -webkit-text-fill-color: #fff;
 }
 .nav-links {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 .nav-links a {
-  color: var(--muted);
+  color: rgba(255,255,255,0.65);
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
   transition: color .2s;
 }
-.nav-links a:hover { color: var(--text); }
+.nav-links a:hover { color: #fff; text-decoration: none; }
 .nav-cta {
-  background: linear-gradient(135deg, var(--brand), var(--brand2));
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  color: #fff !important;
+  background: #fff;
+  color: #000 !important;
   padding: 8px 18px;
-  border-radius: 999px;
+  border-radius: 4px;
   font-size: 0.82rem;
   font-weight: 700;
+  -webkit-text-fill-color: #000;
 }
-.nav-cta:hover { opacity: 0.88; text-decoration: none; }
+.nav-cta:hover { background: rgba(255,255,255,0.85); text-decoration: none; }
 
 /* ── HERO ── */
 .hero {
@@ -85,7 +91,7 @@ a:hover { text-decoration: underline; }
   overflow: hidden;
   padding: 5rem 1.5rem 4rem;
   text-align: center;
-  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(0,114,255,0.3) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(0,198,255,0.08) 0%, transparent 70%);
 }
 .hero::before {
   content: '';
