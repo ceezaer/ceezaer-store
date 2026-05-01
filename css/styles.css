@@ -440,6 +440,34 @@ ul, ol {
   flex-wrap: wrap;
 }
 
+.hero-play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  margin: 1.75rem auto;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.hero-play-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
+.hero-play-btn svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+}
+
 /* ---------- Buttons (DJI-style) ---------- */
 .btn {
   display: inline-flex;
