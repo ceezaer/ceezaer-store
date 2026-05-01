@@ -288,18 +288,12 @@ ul, ol {
   min-height: 100svh;
 }
 
-/* Starts solid black — JS fades to gradient once video plays */
 .hero-video-overlay {
   position: absolute;
   inset: 0;
   z-index: 3;
-  background: #000;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.5) 100%);
   pointer-events: none;
-  transition: opacity 0.8s ease-out;
-}
-
-.hero-video-overlay.playing {
-  opacity: 0;
 }
 
 /* Full-screen image hero */
