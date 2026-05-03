@@ -98,6 +98,7 @@
         <a href="/about" class="nav-link">About</a>
         <a href="/services" class="nav-link">Services</a>
         <a href="/work" class="nav-link">Work</a>
+        <a href="/other-worlds" class="nav-link">Other Worlds</a>
         <a href="/store" class="nav-link">Store</a>
         <a href="/platform" class="nav-link">Platform</a>
         <a href="/blog" class="nav-link">Blog</a>
@@ -119,11 +120,11 @@
 
   <!-- Hero Section -->
   <main>
-    <section class="hero hero-video">
-      <div class="hero-video-bg">
-        <iframe id="hero-yt" src="https://www.youtube.com/embed/30jZnNDfPIQ?autoplay=1&mute=1&loop=1&playlist=30jZnNDfPIQ&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&start=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section class="hero hero-image">
+      <div class="hero-image-bg">
+        <img src="/images/urban-perspectives.jpg" alt="Aerial drone view of Austin city skyline" loading="eager" fetchpriority="high">
       </div>
-      <div class="hero-video-overlay"></div>
+      <div class="hero-image-overlay"></div>
     </section>
 
     <!-- Credentials Bar -->
@@ -594,38 +595,5 @@
   <script src="/js/inquiry-form.js"></script>
   <script src="/assets/js/email.js"></script>
   <script src="/js/footer-enhance.js"></script>
-  <script>
-    var overlay = document.querySelector('.hero-video-overlay');
-    function onYouTubeIframeAPIReady() {
-      var player = new YT.Player('hero-yt', {
-        events: {
-          onStateChange: function(e) {
-            if (e.data === YT.PlayerState.PLAYING && overlay) {
-              overlay.classList.add('playing');
-            }
-            if (e.data === YT.PlayerState.ENDED) {
-              player.seekTo(0, true);
-              player.playVideo();
-            }
-          },
-          onReady: function(e) {
-            e.target.playVideo();
-            setInterval(function() {
-              if (player.getPlayerState && player.getPlayerState() === YT.PlayerState.PLAYING) {
-                var dur = player.getDuration();
-                var cur = player.getCurrentTime();
-                if (dur > 0 && cur >= dur - 10) {
-                  player.seekTo(0, true);
-                }
-              }
-            }, 500);
-          }
-        }
-      });
-    }
-    var s = document.createElement('script');
-    s.src = 'https://www.youtube.com/iframe_api';
-    document.head.appendChild(s);
-  </script>
 </body>
 </html>
